@@ -1,0 +1,66 @@
+.monthCal{
+    margin-top: 2rem;
+}
+.heading{
+   text-align: center;
+   color: rgb(49 66 89);
+   font-weight: 700;
+   font-family: sans-serif;
+}
+form, .displayDate{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.back-btn{
+    text-align: end;
+    margin-top: 1rem;
+}
+/* Navbar */
+.social-icon li:hover i {
+  color: #0d6efd;
+}
+/* Custom collapse behavior */
+@media (max-width: 992px) {
+    .navbar-collapse-left {
+      position: fixed;
+      top: 3.8rem;
+      left: -250px; /* Initially hidden on the left */
+      height: 100%;
+      width: 250px;
+      background-color: white;
+      padding-top: 1rem;
+      transition: all 0.3s ease;
+      z-index: 1050;
+    }
+  
+    .navbar-collapse-left.show {
+      left: 0; /* Slide in from left to right */
+      padding-left: 1rem;
+    }
+  
+    .navbar-collapse-left .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-collapse-left .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .navbar-toggler {
+      z-index: 1060;
+    }
+    .displayDate{
+      margin-top: 1rem;
+    }
+  }
+  
+
+@media (max-width : 768px) {
+    .result{
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
